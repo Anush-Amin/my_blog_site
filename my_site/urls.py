@@ -23,4 +23,4 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("blog.urls")) # using this http://localhost:8000/ will show starting page
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-# this statuc is to display the image. Djnago by itself will not display contents uploaded because of security
+# this static is to display the image. Django by itself will not display contents uploaded because of security
